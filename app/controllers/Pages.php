@@ -16,7 +16,7 @@ class Pages extends Controller {
             'users'=> $users
         ];
 
-        $this->view('pages/index',$data);
+        $this->view('pages/index');
     }
 
     public function about(){

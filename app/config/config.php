@@ -9,7 +9,7 @@ define('DB_NAME','mvc_php_native');
 define('APPROOT',dirname(dirname(__FILE__)));
 
 //URLROOT
-define('URLROOT','localhost/mvc_php_native');
+define('URLROOT','http://localhost/login_register_mvc');
 
 //Sitename
-define('SITENAME','MVC_PHP_NATIVE');
+define('SITENAME','Login and Register');
