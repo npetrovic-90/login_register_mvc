@@ -18,4 +18,19 @@ class Users extends Controller{
 
         $this->view('users/login',$data);
     }
+
+    public function register(){
+        $data=[
+            'username'=>'',
+            'email'=>'',
+            'password'=>'',
+            'confirmPassword'=>'',
+            'usernameError'=>'',
+            'emailError'=>'',
+            'passwordError'=>'',
+            'confirmPasswordError'=>''
+        ];
+
+        $this->view('users/register',$data);
+    }
 }
