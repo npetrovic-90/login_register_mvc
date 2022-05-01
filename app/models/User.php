@@ -38,4 +38,23 @@ class User {
         }else{return false;}
 
     }
+
+    public function login($username,$password){
+
+        $this->db->query('SELECT * FROM users WHERE username=:username');
+
+        //bind value
+        $this->db->bind(':username',$username);
+
+        $row=$this->db->single();
+
+        $hashedPassword=$row->password;
+        if(password_verify($password,$hashedPassword)){
+            return $row;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

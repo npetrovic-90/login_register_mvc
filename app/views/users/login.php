@@ -8,6 +8,7 @@
     ?>
 
 </div>
+
 <div class="container-login">
         <div class="wrapper-login">
             <h2>Sign In</h2>
@@ -17,7 +18,7 @@
                     <?php echo $data['usernameError']; ?>
                 </span>
 
-                <input type="text" placeholder="Password *" name="password">
+                <input type="password" placeholder="Password *" name="password">
                 <span class="invalidFeedback">
                     <?php echo $data['passwordError']; ?>
                 </span>
