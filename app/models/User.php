@@ -48,7 +48,7 @@ class User {
 
         $row=$this->db->single();
 
-        $hashedPassword=$row->password;
+        $hashedPassword = !empty($row) ? $row->password;
         if(password_verify($password,$hashedPassword)){
             return $row;
         }
