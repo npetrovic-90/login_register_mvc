@@ -3,7 +3,7 @@
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
-define('DB_NAME','mvc_php_native');
+define('DB_NAME','login_register_mvc');
 
 //root of our app
 define('APPROOT',dirname(dirname(__FILE__)));

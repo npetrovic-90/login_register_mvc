@@ -23,12 +23,12 @@
                 </span>
 
 
-                <input type="text" placeholder="Password *" name="password">
+                <input type="password" placeholder="Password *" name="password">
                 <span class="invalidFeedback">
                     <?php echo $data['passwordError']; ?>
                 </span>
 
-                <input type="text" placeholder="Confirm Password *" name="confirmPassword">
+                <input type="password" placeholder="Confirm Password *" name="confirmPassword">
                 <span class="invalidFeedback">
                     <?php echo $data['confirmPasswordError']; ?>
                 </span>
